@@ -3975,3 +3975,1148 @@ Migrating to AddAirportToFlights (20250622204730)
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
   [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
   [1m[35m (7680.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flight_booker_development" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (7381.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flight_booker_development" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (7540.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flight_booker_development" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (7367.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flight_booker_development" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (7295.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flight_booker_development" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (75.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flight_booker_development" /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (31.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flight_booker_test" /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (108.8ms)[0m  [1m[35mCREATE DATABASE "flight_booker_development" ENCODING = 'unicode' /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (42.2ms)[0m  [1m[35mCREATE DATABASE "flight_booker_test" ENCODING = 'unicode' /*application='FlightBooker'*/[0m
+  [1m[35mSQL (7.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "airports" CASCADE /*application='FlightBooker'*/[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "airports" ("id" bigserial primary key, "code" character varying NOT NULL, "city" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "flights" CASCADE /*application='FlightBooker'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "flights" ("id" bigserial primary key, "departure_airport" integer, "arrival_airport" integer, "time" date, "duration" time, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "arrival_airport_id" integer, "destination_airport_id" integer) /*application='FlightBooker'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_flights_on_arrival_airport_id" ON "flights" ("arrival_airport_id") /*application='FlightBooker'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_flights_on_destination_airport_id" ON "flights" ("destination_airport_id") /*application='FlightBooker'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250622204730) /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250622204419),
+(20250622201151); /*application='FlightBooker'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-06-23 00:41:00.111364', '2025-06-23 00:41:00.111365') RETURNING "key" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'e74bd3d3db64eda967aaab0304a1fe986be58666', '2025-06-23 00:41:00.113357', '2025-06-23 00:41:00.113357') RETURNING "key" /*application='FlightBooker'*/[0m
+  [1m[35mSQL (5.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='FlightBooker'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "airports" CASCADE /*application='FlightBooker'*/[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "airports" ("id" bigserial primary key, "code" character varying NOT NULL, "city" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "flights" CASCADE /*application='FlightBooker'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "flights" ("id" bigserial primary key, "departure_airport" integer, "arrival_airport" integer, "time" date, "duration" time, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "arrival_airport_id" integer, "destination_airport_id" integer) /*application='FlightBooker'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_flights_on_arrival_airport_id" ON "flights" ("arrival_airport_id") /*application='FlightBooker'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_flights_on_destination_airport_id" ON "flights" ("destination_airport_id") /*application='FlightBooker'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20250622204730) /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20250622204419),
+(20250622201151); /*application='FlightBooker'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-06-23 00:41:00.136776', '2025-06-23 00:41:00.136777') RETURNING "key" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-06-23 00:41:00.137995' WHERE "ar_internal_metadata"."key" = 'environment' /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('schema_sha1', 'e74bd3d3db64eda967aaab0304a1fe986be58666', '2025-06-23 00:41:00.138778', '2025-06-23 00:41:00.138779') RETURNING "key" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.8ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 00:41:00.170445', '2025-06-23 00:41:00.170445') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.7ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 00:41:00.172911', '2025-06-23 00:41:00.172911') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 00:41:00.174668', '2025-06-23 00:41:00.174668') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 00:41:00.176255', '2025-06-23 00:41:00.176255') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 00:41:00.179423', '2025-06-23 00:41:00.179423') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 00:41:00.180963', '2025-06-23 00:41:00.180963') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (1.0ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 00:41:00.182440', '2025-06-23 00:41:00.182440') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 00:41:00.184379', '2025-06-23 00:41:00.184379') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 00:41:00.185859', '2025-06-23 00:41:00.185859') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 00:41:00.188636', '2025-06-23 00:41:00.188636') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 00:41:00.190034', '2025-06-23 00:41:00.190034') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 00:41:00.191412', '2025-06-23 00:41:00.191412') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (2.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 00:41:00.195225', '2025-06-23 00:41:00.195225') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (4.9ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 00:41:00.201872', '2025-06-23 00:41:00.201872') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.7ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (5.3ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 1 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 2 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 3 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 4 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (1.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 5 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (3.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 6 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 7 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 8 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 9 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 10 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 11 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 12 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 13 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 14 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.8ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 00:48:32.080878', '2025-06-23 00:48:32.080878') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 00:48:32.082669', '2025-06-23 00:48:32.082669') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 00:48:32.084140', '2025-06-23 00:48:32.084140') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 00:48:32.085506', '2025-06-23 00:48:32.085506') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 00:48:32.086854', '2025-06-23 00:48:32.086854') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 00:48:32.088227', '2025-06-23 00:48:32.088227') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 00:48:32.089599', '2025-06-23 00:48:32.089599') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 00:48:32.090970', '2025-06-23 00:48:32.090970') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 00:48:32.095260', '2025-06-23 00:48:32.095260') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 00:48:32.096613', '2025-06-23 00:48:32.096613') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 00:48:32.097938', '2025-06-23 00:48:32.097938') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 00:48:32.099607', '2025-06-23 00:48:32.099607') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 00:48:32.100914', '2025-06-23 00:48:32.100914') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 00:48:32.102258', '2025-06-23 00:48:32.102258') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."code" = 'YYZ' LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.6ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (5.3ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 15 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 16 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 17 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 18 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (2.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 19 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (3.9ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 20 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 21 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 22 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 23 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 24 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 25 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 26 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 27 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 28 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."code" = 'ATL' LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (1.3ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('ATL', NULL, '2025-06-23 00:50:55.132403', '2025-06-23 00:50:55.132403') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.5ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."code" = 'ATL' LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('ATL', NULL, '2025-06-23 00:51:13.803523', '2025-06-23 00:51:13.803523') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.6ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."code" = 'ATL' LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('ATL', NULL, '2025-06-23 00:51:41.703690', '2025-06-23 00:51:41.703690') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+Migrating to AddAirportToFlights (20250622204730)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "flights" DROP COLUMN "destination_airport_id" /*application='FlightBooker'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "flights" DROP COLUMN "arrival_airport_id" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20250622204730' /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+Migrating to AddAirportToFlights (20250622204730)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "flights" ADD "arrival_airport_id" bigint /*application='FlightBooker'*/[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE INDEX "index_flights_on_arrival_airport_id" ON "flights" ("arrival_airport_id") /*application='FlightBooker'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "flights" ADD "destination_airport_id" bigint /*application='FlightBooker'*/[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE INDEX "index_flights_on_destination_airport_id" ON "flights" ("destination_airport_id") /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250622204730') RETURNING "version" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+Migrating to AddAirportToFlights (20250622204730)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "flights" DROP COLUMN "destination_airport_id" /*application='FlightBooker'*/[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "flights" DROP COLUMN "arrival_airport_id" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20250622204730' /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+Migrating to AddAirportToFlights (20250622204730)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "flights" ADD "arrival_airport_id" bigint /*application='FlightBooker'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "index_flights_on_arrival_airport_id" ON "flights" ("arrival_airport_id") /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "flights" ADD "destination_airport_id" bigint /*application='FlightBooker'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_flights_on_destination_airport_id" ON "flights" ("destination_airport_id") /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250622204730') RETURNING "version" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (15.7ms)[0m  [1m[35mCREATE DATABASE "flight_booker_development" ENCODING = 'unicode' /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE DATABASE "flight_booker_test" ENCODING = 'unicode' /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='FlightBooker'*/[0m
+  [1m[35m (4.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "airports" CASCADE /*application='FlightBooker'*/[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "airports" ("id" bigserial primary key, "code" character varying NOT NULL, "city" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='FlightBooker'*/[0m
+  [1m[35m (1.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "flights" CASCADE /*application='FlightBooker'*/[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "flights" ("id" bigserial primary key, "departure_airport" integer, "arrival_airport" integer, "time" date, "duration" time, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "arrival_airport_id" bigint, "destination_airport_id" bigint) /*application='FlightBooker'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE INDEX "index_flights_on_arrival_airport_id" ON "flights" ("arrival_airport_id") /*application='FlightBooker'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_flights_on_destination_airport_id" ON "flights" ("destination_airport_id") /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'a27a81df5af44349ee1e89a9e359dd755777cd83', "updated_at" = '2025-06-23 14:56:25.181083' WHERE "ar_internal_metadata"."key" = 'schema_sha1' /*application='FlightBooker'*/[0m
+  [1m[35mSQL (7.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql" SCHEMA pg_catalog /*application='FlightBooker'*/[0m
+  [1m[35m (4.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "airports" CASCADE /*application='FlightBooker'*/[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "airports" ("id" bigserial primary key, "code" character varying NOT NULL, "city" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='FlightBooker'*/[0m
+  [1m[35m (1.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "flights" CASCADE /*application='FlightBooker'*/[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "flights" ("id" bigserial primary key, "departure_airport" integer, "arrival_airport" integer, "time" date, "duration" time, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "arrival_airport_id" bigint, "destination_airport_id" bigint) /*application='FlightBooker'*/[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE INDEX "index_flights_on_arrival_airport_id" ON "flights" ("arrival_airport_id") /*application='FlightBooker'*/[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE INDEX "index_flights_on_destination_airport_id" ON "flights" ("destination_airport_id") /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'development', "updated_at" = '2025-06-23 14:56:25.210561' WHERE "ar_internal_metadata"."key" = 'environment' /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'test', "updated_at" = '2025-06-23 14:56:25.212246' WHERE "ar_internal_metadata"."key" = 'environment' /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'schema_sha1' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = 'a27a81df5af44349ee1e89a9e359dd755777cd83', "updated_at" = '2025-06-23 14:56:25.213126' WHERE "ar_internal_metadata"."key" = 'schema_sha1' /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (0.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."code" = 'ATL' LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('ATL', NULL, '2025-06-23 14:56:25.252335', '2025-06-23 14:56:25.252335') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[35mSET search_path TO public /*application='FlightBooker'*/[0m
+  [1m[35m (7401.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "flight_booker_development" /*application='FlightBooker'*/[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+Migrating to RemoveDeArriAirportColumnsFromFlights (20250623150156)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "flights" DROP COLUMN "departure_airport" /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "flights" DROP COLUMN "arrival_airport" /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "flights" DROP COLUMN "duration" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250623150156') RETURNING "version" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (0.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.8ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."code" = 'ATL' LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.8ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('ATL', NULL, '2025-06-23 15:18:51.261112', '2025-06-23 15:18:51.261112') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (0.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.5ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (5.9ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 15:19:19.095848', '2025-06-23 15:19:19.095848') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 15:19:19.103115', '2025-06-23 15:19:19.103115') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.7ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 15:19:19.104922', '2025-06-23 15:19:19.104922') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (1.8ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:19:19.106762', '2025-06-23 15:19:19.106762') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (2.0ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 15:19:19.112418', '2025-06-23 15:19:19.112418') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (2.4ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 15:19:19.120408', '2025-06-23 15:19:19.120408') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 15:19:19.123725', '2025-06-23 15:19:19.123725') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.7ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 15:19:19.125172', '2025-06-23 15:19:19.125172') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.8ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 15:19:19.126683', '2025-06-23 15:19:19.126683') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 15:19:19.128358', '2025-06-23 15:19:19.128358') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 15:19:19.129777', '2025-06-23 15:19:19.129777') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 15:19:19.131178', '2025-06-23 15:19:19.131178') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 15:19:19.132547', '2025-06-23 15:19:19.132547') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:19:19.133967', '2025-06-23 15:19:19.133967') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."code" = 'YYZ' LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.6ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (5.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 3 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 4 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 5 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 6 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (1.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 7 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (3.1ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 8 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 9 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.4ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 10 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.4ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 11 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.4ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 12 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 13 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.4ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 14 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.4ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 15 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.4ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 16 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 15:21:20.315886', '2025-06-23 15:21:20.315886') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 15:21:20.317469', '2025-06-23 15:21:20.317469') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 15:21:20.318787', '2025-06-23 15:21:20.318787') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.4ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:21:20.320013', '2025-06-23 15:21:20.320013') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 15:21:20.321245', '2025-06-23 15:21:20.321245') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 15:21:20.322484', '2025-06-23 15:21:20.322484') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 15:21:20.323692', '2025-06-23 15:21:20.323692') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 15:21:20.324932', '2025-06-23 15:21:20.324932') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 15:21:20.329107', '2025-06-23 15:21:20.329107') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.4ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 15:21:20.330418', '2025-06-23 15:21:20.330418') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.4ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 15:21:20.331602', '2025-06-23 15:21:20.331602') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 15:21:20.333065', '2025-06-23 15:21:20.333065') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.4ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 15:21:20.334261', '2025-06-23 15:21:20.334261') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.4ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:21:20.335412', '2025-06-23 15:21:20.335412') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."code" = '17' LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+Migrating to AddDurationToFlights (20250623153251)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "flights" ADD "duration" integer /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250623153251') RETURNING "version" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.6ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (5.4ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 17 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 18 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 19 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 20 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (1.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 21 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (4.0ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 22 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 23 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 24 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 25 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 26 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 27 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 28 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 29 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 30 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.8ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 15:40:02.329976', '2025-06-23 15:40:02.329976') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 15:40:02.331798', '2025-06-23 15:40:02.331798') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 15:40:02.333271', '2025-06-23 15:40:02.333271') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:40:02.334742', '2025-06-23 15:40:02.334742') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 15:40:02.336121', '2025-06-23 15:40:02.336121') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 15:40:02.337473', '2025-06-23 15:40:02.337473') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 15:40:02.338793', '2025-06-23 15:40:02.338793') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 15:40:02.340136', '2025-06-23 15:40:02.340136') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (3.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 15:40:02.341456', '2025-06-23 15:40:02.341456') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 15:40:02.345769', '2025-06-23 15:40:02.345769') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 15:40:02.347112', '2025-06-23 15:40:02.347112') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.9ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 15:40:02.348477', '2025-06-23 15:40:02.348477') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 15:40:02.350151', '2025-06-23 15:40:02.350151') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:40:02.351814', '2025-06-23 15:40:02.351814') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.8ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 31 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 32 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 33 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 34 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 35 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 36 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 37 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 38 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (3.8ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 39 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 40 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 41 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 42 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 43 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 44 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.8ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 15:40:59.678468', '2025-06-23 15:40:59.678468') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 15:40:59.682403', '2025-06-23 15:40:59.682403') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 15:40:59.683787', '2025-06-23 15:40:59.683787') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:40:59.685121', '2025-06-23 15:40:59.685121') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.7ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 15:40:59.686701', '2025-06-23 15:40:59.686701') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 15:40:59.688198', '2025-06-23 15:40:59.688198') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 15:40:59.689649', '2025-06-23 15:40:59.689649') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 15:40:59.692105', '2025-06-23 15:40:59.692105') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 15:40:59.693447', '2025-06-23 15:40:59.693447') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 15:40:59.694790', '2025-06-23 15:40:59.694790') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 15:40:59.696368', '2025-06-23 15:40:59.696368') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 15:40:59.697768', '2025-06-23 15:40:59.697768') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 15:40:59.699101', '2025-06-23 15:40:59.699101') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (1.0ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:40:59.700415', '2025-06-23 15:40:59.700415') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.6ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 45 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 46 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 47 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 48 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 49 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 50 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 51 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 52 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (3.8ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 53 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 54 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 55 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 56 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 57 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 58 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.7ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 15:43:32.863745', '2025-06-23 15:43:32.863745') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 15:43:32.867680', '2025-06-23 15:43:32.867680') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 15:43:32.869062', '2025-06-23 15:43:32.869062') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:43:32.870450', '2025-06-23 15:43:32.870450') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 15:43:32.871992', '2025-06-23 15:43:32.871992') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 15:43:32.873309', '2025-06-23 15:43:32.873309') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 15:43:32.874626', '2025-06-23 15:43:32.874626') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 15:43:32.877079', '2025-06-23 15:43:32.877079') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 15:43:32.878400', '2025-06-23 15:43:32.878400') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 15:43:32.879714', '2025-06-23 15:43:32.879714') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 15:43:32.881213', '2025-06-23 15:43:32.881213') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 15:43:32.882540', '2025-06-23 15:43:32.882540') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 15:43:32.883842', '2025-06-23 15:43:32.883842') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.7ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:43:32.885576', '2025-06-23 15:43:32.885576') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.8ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.8ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 59 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 60 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 61 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 62 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 63 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 64 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 65 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 66 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (3.8ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 67 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 68 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 69 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 70 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 71 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 72 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.9ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 15:46:05.983613', '2025-06-23 15:46:05.983613') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 15:46:05.987665', '2025-06-23 15:46:05.987665') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 15:46:05.989077', '2025-06-23 15:46:05.989077') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:46:05.990516', '2025-06-23 15:46:05.990516') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 15:46:05.992062', '2025-06-23 15:46:05.992062') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 15:46:05.993391', '2025-06-23 15:46:05.993391') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 15:46:05.994701', '2025-06-23 15:46:05.994701') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 15:46:05.997117', '2025-06-23 15:46:05.997117') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 15:46:05.998503', '2025-06-23 15:46:05.998503') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 15:46:05.999828', '2025-06-23 15:46:05.999828') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 15:46:06.001365', '2025-06-23 15:46:06.001365') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 15:46:06.002666', '2025-06-23 15:46:06.002666') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 15:46:06.003985', '2025-06-23 15:46:06.003985') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (1.0ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:46:06.005316', '2025-06-23 15:46:06.005316') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.6ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 73 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 74 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 75 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 76 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 77 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 78 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 79 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 80 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (4.0ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 81 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 82 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 83 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 84 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 85 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 86 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (1.0ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 15:47:16.003877', '2025-06-23 15:47:16.003877') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 15:47:16.007962', '2025-06-23 15:47:16.007962') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.7ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 15:47:16.009324', '2025-06-23 15:47:16.009324') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:47:16.010836', '2025-06-23 15:47:16.010836') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 15:47:16.012500', '2025-06-23 15:47:16.012500') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 15:47:16.013833', '2025-06-23 15:47:16.013833') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 15:47:16.015125', '2025-06-23 15:47:16.015125') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 15:47:16.017601', '2025-06-23 15:47:16.017601') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 15:47:16.018933', '2025-06-23 15:47:16.018933') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 15:47:16.020232', '2025-06-23 15:47:16.020232') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 15:47:16.021653', '2025-06-23 15:47:16.021653') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 15:47:16.023045', '2025-06-23 15:47:16.023045') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 15:47:16.024347', '2025-06-23 15:47:16.024347') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 15:47:16.026163', '2025-06-23 15:47:16.026163') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+Migrating to FixColumnName (20250623163641)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "flights" RENAME COLUMN "destination_airport_id" TO "departing_airport_id" /*application='FlightBooker'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER INDEX "index_flights_on_destination_airport_id" RENAME TO "index_flights_on_departing_airport_id" /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "flights" RENAME COLUMN "time" TO "date" /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250623163641') RETURNING "version" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(6637680041827388190) /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (0.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.8ms)[0m  [1m[34mSELECT "airports".* FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (5.3ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 87 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 88 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 89 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.7ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 90 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (2.1ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 91 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (3.0ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 92 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 93 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 94 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 95 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 96 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.6ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 97 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 98 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 99 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Destroy (0.5ms)[0m  [1m[31mDELETE FROM "airports" WHERE "airports"."id" = 100 /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (1.0ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYZ', 'Toronto', '2025-06-23 16:42:22.110178', '2025-06-23 16:42:22.110178') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YVR', 'Vancouver', '2025-06-23 16:42:22.112244', '2025-06-23 16:42:22.112244') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYC', 'Calgary', '2025-06-23 16:42:22.113757', '2025-06-23 16:42:22.113757') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 16:42:22.115168', '2025-06-23 16:42:22.115168') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YUL', 'Montreal', '2025-06-23 16:42:22.116526', '2025-06-23 16:42:22.116526') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YYT', 'St. John''s', '2025-06-23 16:42:22.117876', '2025-06-23 16:42:22.117876') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YWG', 'Winnipeg', '2025-06-23 16:42:22.119230', '2025-06-23 16:42:22.119230') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.6ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YFC', 'Fredericton', '2025-06-23 16:42:22.120645', '2025-06-23 16:42:22.120645') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (3.4ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YHC', 'Halifax', '2025-06-23 16:42:22.122013', '2025-06-23 16:42:22.122013') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YOW', 'Ottawa', '2025-06-23 16:42:22.126290', '2025-06-23 16:42:22.126290') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQB', 'Quebec City', '2025-06-23 16:42:22.127605', '2025-06-23 16:42:22.127605') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.9ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQX', 'Gander', '2025-06-23 16:42:22.128930', '2025-06-23 16:42:22.128930') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YQM', 'Moncton', '2025-06-23 16:42:22.130594', '2025-06-23 16:42:22.130594') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mAirport Create (0.5ms)[0m  [1m[32mINSERT INTO "airports" ("code", "city", "created_at", "updated_at") VALUES ('YEG', 'Edmonton', '2025-06-23 16:42:22.131895', '2025-06-23 16:42:22.131895') RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mAirport Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "airports" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mFlight Create (2.6ms)[0m  [1m[32mINSERT INTO "flights" ("date", "created_at", "updated_at", "arrival_airport_id", "departing_airport_id", "duration") VALUES ('2025-06-24', '2025-06-23 16:42:22.140778', '2025-06-23 16:42:22.140778', 102, 101, 360) RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mFlight Create (0.6ms)[0m  [1m[32mINSERT INTO "flights" ("date", "created_at", "updated_at", "arrival_airport_id", "departing_airport_id", "duration") VALUES ('2025-06-25', '2025-06-23 16:42:22.144362', '2025-06-23 16:42:22.144362', 105, 103, 240) RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mFlight Create (0.7ms)[0m  [1m[32mINSERT INTO "flights" ("date", "created_at", "updated_at", "arrival_airport_id", "departing_airport_id", "duration") VALUES ('2025-06-26', '2025-06-23 16:42:22.145801', '2025-06-23 16:42:22.145801', 101, 113, 180) RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mFlight Create (0.5ms)[0m  [1m[32mINSERT INTO "flights" ("date", "created_at", "updated_at", "arrival_airport_id", "departing_airport_id", "duration") VALUES ('2025-06-27', '2025-06-23 16:42:22.147329', '2025-06-23 16:42:22.147329', 113, 114, 300) RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*application='FlightBooker'*/[0m
+  [1m[36mFlight Create (0.6ms)[0m  [1m[32mINSERT INTO "flights" ("date", "created_at", "updated_at", "arrival_airport_id", "departing_airport_id", "duration") VALUES ('2025-06-28', '2025-06-23 16:42:22.148722', '2025-06-23 16:42:22.148722', 108, 106, 210) RETURNING "id" /*application='FlightBooker'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT /*application='FlightBooker'*/[0m
+  [1m[36mFlight Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights" /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.8ms)[0m  [1m[34mSELECT "airports".* FROM "airports" ORDER BY "airports"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m

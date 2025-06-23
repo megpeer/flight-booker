@@ -9,34 +9,27 @@
 #   end
 Flight.destroy_all
 Airport.destroy_all
-Airport.create!([{ code: 'YYZ', city: 'Toronto' },
-                 { code: 'YVR', city: 'Vancouver' },
-                 { code: 'YYC', city: 'Calgary' },
-                 { code: 'YEG', city: 'Edmonton' },
-                 { code: 'YUL', city: 'Montreal' },
-                 { code: 'YYT', city: "St. John's" },
-                 { code: 'YWG', city: 'Winnipeg' },
-                 { code: 'YFC', city: 'Fredericton' },
-                 { code: 'YHC', city: 'Halifax' },
-                 { code: 'YOW', city: 'Ottawa' },
-                 { code: 'YQB', city: 'Quebec City' },
-                 { code: 'YQX', city: 'Gander' },
-                 { code: 'YQM', city: 'Moncton' },
-                 { code: 'YEG', city: 'Edmonton' }])
+
+yyz = Airport.create!(code: 'YYZ', city: 'Toronto')
+yvr = Airport.create!(code: 'YVR', city: 'Vancouver')
+yyc = Airport.create!(code: 'YYC', city: 'Calgary')
+yeg = Airport.create!(code: 'YEG', city: 'Edmonton')
+yul = Airport.create!(code: 'YUL', city: 'Montreal')
+yyt = Airport.create!(code: 'YYT', city: "St. John's")
+ywg = Airport.create!(code: 'YWG', city: 'Winnipeg')
+yfc = Airport.create!(code: 'YFC', city: 'Fredericton')
+yhc = Airport.create!(code: 'YHC', city: 'Halifax')
+yow = Airport.create!(code: 'YOW', city: 'Ottawa')
+yqb = Airport.create!(code: 'YQB', city: 'Quebec City')
+yqx = Airport.create!(code: 'YQX', city: 'Gander')
+yqm = Airport.create!(code: 'YQM', city: 'Moncton')
+yeg = Airport.create!(code: 'YEG', city: 'Edmonton')
 p "Created #{Airport.count} Airports"
-
-# %w[YYZ YVR YYC YEG YUL YYT YWG YFC YHC YOW YQB YQX YQM YEG].each do |departure|
-#   %w[YYZ YVR YYC YEG YUL YYT YWG YFC YHC YOW YQB YQX YQM YEG].each_with_index do |arrival, i|
-#     next if departure.eql?(arrival)
-
-#     f = Flight.new(time: Time.now + 1.months, duration: Time.now + 1.months + rand(1..10).hours)
-#     f.departure_airport = Airport.find_by(code: departure)
-#     f.arrival_airport = Airport.find_by(code: arrival)
-#     f.save!
-#   end
-# end
-Flight.create!([{ date: rand(1.year).seconds.from_now,
-                  duration: '',
-                  arrival_airport_id: 1,
-                  departure_airport_id: 3 }])
+Flight.create!([
+                 { departing_airport: yyz, arrival_airport: yvr, date: Date.today + 1.day, duration: 360 },
+                 { departing_airport: yyc, arrival_airport: yul, date: Date.today + 2.days, duration: 240 },
+                 { departing_airport: yqm, arrival_airport: yyz, date: Date.today + 3.days, duration: 180 },
+                 { departing_airport: yeg, arrival_airport: yqm, date: Date.today + 4.days, duration: 300 },
+                 { departing_airport: yyt, arrival_airport: yfc, date: Date.today + 5.days, duration: 210 }
+               ])
 p "Created #{Flight.count} Flights"
