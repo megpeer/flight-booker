@@ -1,0 +1,7 @@
+<p>
+    <%@flights.each do |f|%>
+        <%= f.departing_airport.city%> to <%=f.arrival_airport.city%><br>
+        <%= f.date %><br>
+        <%= f.duration %> minutes<br>
+</p>
+<% end %>

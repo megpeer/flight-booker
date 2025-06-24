@@ -5120,3 +5120,2278 @@ Migrating to FixColumnName (20250623163641)
   [1m[36mFlight Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "flights" /*application='FlightBooker'*/[0m
   [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
   [1m[36mAirport Load (0.8ms)[0m  [1m[34mSELECT "airports".* FROM "airports" ORDER BY "airports"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (0.7ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (1.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.4ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.8ms)[0m  [1m[34mSELECT "airports".* FROM "airports" ORDER BY "airports"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (0.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."departing_airport_id" = 101 /* loading for pp */ LIMIT 11 /*application='FlightBooker'*/[0m
+  [1m[36mAirport Load (0.9ms)[0m  [1m[34mSELECT "airports".* FROM "airports" ORDER BY "airports"."id" ASC LIMIT 1 /*application='FlightBooker'*/[0m
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights" WHERE "flights"."arrival_airport_id" = 101 /* loading for pp */ LIMIT 11 /*application='FlightBooker'*/[0m
+Started GET "/" for ::1 at 2025-06-23 13:56:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 1.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 81ms (ActiveRecord: 12.2ms (0 queries, 0 cached) | GC: 0.9ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @events.each do |event| %>    
+    <%= <li>event</li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>event</li> ); @output_buff...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @events.each do |event| %>    
+    <%= <li>event</li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @events.each do |event| %>    
+6:        <%= <li>event</li> %>
+7:        <% end %>
+8:    </ul>
+9:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>event</li> ); @output_buff...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 13:56:32 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @events.each do |event| %>    
+    <%= <li>event</li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>event</li> ); @output_buff...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @events.each do |event| %>    
+    <%= <li>event</li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @events.each do |event| %>    
+6:        <%= <li>event</li> %>
+7:        <% end %>
+8:    </ul>
+9:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>event</li> ); @output_buff...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+Started GET "/favicon.ico" for ::1 at 2025-06-23 13:56:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2025-06-23 13:58:02 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 2.6ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @events.each do |event| %>    
+    <%= <li>event.date</li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>event.date</li> ); @output...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @events.each do |event| %>    
+    <%= <li>event.date</li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @events.each do |event| %>    
+6:        <%= <li>event.date</li> %>
+7:        <% end %>
+8:    </ul>
+9:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>event.date</li> ); @output...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 13:59:06 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight.date</li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.date</li> ); @outpu...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight.date</li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @flights.each do |flight| %>    
+6:        <%= <li>flight.date</li> %>
+7:        <% end %>
+8:    </ul>
+9:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.date</li> ); @outpu...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 13:59:26 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 2.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight</li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight</li> ); @output_buf...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight</li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @flights.each do |flight| %>    
+6:        <%= <li>flight</li> %>
+7:        <% end %>
+8:    </ul>
+9:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight</li> ); @output_buf...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 14:02:41 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 1.1ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | GC: 0.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.9ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @flights.each do |flight| %>    
+6:        <%= <li>flight
+7:        </li> %>
+8:        <% end %>
+9:    </ul>
+10:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 14:02:44 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @flights.each do |flight| %>    
+6:        <%= <li>flight
+7:        </li> %>
+8:        <% end %>
+9:    </ul>
+10:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 14:04:25 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @flights.each do |flight| %>    
+6:        <%= <li>flight
+7:        </li> %>
+8:        <% end %>
+9:    </ul>
+10:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+  [1m[36mFlight Load (1.6ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*application='FlightBooker'*/[0m
+Started GET "/" for ::1 at 2025-06-23 14:05:45 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @flights.each do |flight| %>    
+6:        <%= <li>flight
+7:        </li> %>
+8:        <% end %>
+9:    </ul>
+10:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 14:06:05 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight
+    </li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @flights.each do |flight| %>    
+6:        <%= <li>flight
+7:        </li> %>
+8:        <% end %>
+9:    </ul>
+10:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:9: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:12: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:9: unknown regexp option - l
+app/views/flights/index.html.erb:11: unknown regexp options - vw
+app/views/flights/index.html.erb:12: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 14:06:52 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.8ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight.date</li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.date</li> ); @outpu...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.each do |flight| %>    
+    <%= <li>flight.date</li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @flights.each do |flight| %>    
+6:        <%= <li>flight.date</li> %>
+7:        <% end %>
+8:    </ul>
+9:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.date</li> ); @outpu...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 14:07:24 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.7ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.date.each do |flight| %>    
+    <%= <li>flight</li> %>
+    <% end %>
+</ul>
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight</li> ); @output_buf...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Flights#index</h1>
+<p>Find me in app/views/flights/index.html.erb</p>
+<p>
+<ul>
+<% @flights.date.each do |flight| %>    
+    <%= <li>flight</li> %>
+    <% end %>
+</ul>
+</p>
+):
+1:    <h1>Flights#index</h1>
+2:    <p>Find me in app/views/flights/index.html.erb</p>
+3:    <p>
+4:    <ul>
+5:    <% @flights.date.each do |flight| %>    
+6:        <%= <li>flight</li> %>
+7:        <% end %>
+8:    </ul>
+9:    </p>
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight</li> ); @output_buf...
+...                              ^
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:8: unknown regexp option - l
+...output_buffer.safe_append='</ul>
+...                            ^~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:10: unknown regexp options - vw
+...safe_append='<!-- END app/views/flights/index.html.erb -->';...
+...                         ^~~~~~
+/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:11: unterminated string meets end of file
+          end
+             ^
+):
+  
+app/views/flights/index.html.erb:6: syntax error, unexpected '<'
+app/views/flights/index.html.erb:8: unknown regexp option - l
+app/views/flights/index.html.erb:10: unknown regexp options - vw
+app/views/flights/index.html.erb:11: unterminated string meets end of file
+Started GET "/" for ::1 at 2025-06-23 14:08:21 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (1.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:4
+  Rendered flights/index.html.erb within layouts/application (Duration: 12.1ms | GC: 1.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | GC: 2.6ms)
+Completed 200 OK in 43ms (Views: 10.3ms | ActiveRecord: 11.3ms (1 query, 0 cached) | GC: 2.6ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 14:09:20 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:4
+  [1m[36mAirport Load (0.8ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:4
+  Rendered flights/index.html.erb within layouts/application (Duration: 24.1ms | GC: 8.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | GC: 10.6ms)
+Completed 200 OK in 56ms (Views: 23.7ms | ActiveRecord: 11.2ms (2 queries, 0 cached) | GC: 13.0ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 14:09:47 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:4
+  [1m[36mAirport Load (0.4ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:4
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:4
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:4
+  Rendered flights/index.html.erb within layouts/application (Duration: 13.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | GC: 0.0ms)
+Completed 200 OK in 40ms (Views: 6.6ms | ActiveRecord: 10.7ms (4 queries, 1 cached) | GC: 0.1ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 14:10:41 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:4
+  Rendered flights/index.html.erb within layouts/application (Duration: 11.6ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | GC: 0.6ms)
+Completed 200 OK in 38ms (Views: 8.0ms | ActiveRecord: 7.6ms (6 queries, 3 cached) | GC: 1.1ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 14:10:59 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:4
+  Rendered flights/index.html.erb within layouts/application (Duration: 12.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | GC: 0.0ms)
+Completed 200 OK in 39ms (Views: 6.9ms | ActiveRecord: 9.6ms (6 queries, 3 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 14:11:56 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:4
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:8
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:9
+  Rendered flights/index.html.erb within layouts/application (Duration: 14.5ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | GC: 0.2ms)
+Completed 200 OK in 36ms (Views: 8.7ms | ActiveRecord: 9.3ms (12 queries, 7 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 14:12:36 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:4
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:8
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:9
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:13
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:14
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:19
+  Rendered flights/index.html.erb within layouts/application (Duration: 18.2ms | GC: 1.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | GC: 1.1ms)
+Completed 200 OK in 44ms (Views: 12.1ms | ActiveRecord: 9.5ms (24 queries, 15 cached) | GC: 1.1ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 14:12:36 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:4
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:8
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:9
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:13
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:14
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:19
+  Rendered flights/index.html.erb within layouts/application (Duration: 11.5ms | GC: 0.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | GC: 0.8ms)
+Completed 200 OK in 35ms (Views: 10.1ms | ActiveRecord: 2.1ms (24 queries, 15 cached) | GC: 0.9ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 14:14:16 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:4
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:7
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:8
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:9
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:13
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:14
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:19
+  Rendered flights/index.html.erb within layouts/application (Duration: 18.3ms | GC: 0.4ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | GC: 0.4ms)
+Completed 200 OK in 43ms (Views: 11.8ms | ActiveRecord: 10.1ms (24 queries, 14 cached) | GC: 0.6ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 15:39:15 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 7.4ms (0 queries, 0 cached) | GC: 2.1ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <%@flights.each do |flight|%>
+    <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+            <%= flight.date %><br>
+            <%= flight.duration %> minutes
+</ul>   </li>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <%@flights.each do |flight|%>
+    <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+            <%= flight.date %><br>
+            <%= flight.duration %> minutes
+</ul>   </li>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+):
+1:    <ul>
+2:        <%@flights.each do |flight|%>
+3:        <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+4:                <%= flight.date %><br>
+5:                <%= flight.duration %> minutes
+6:    </ul>   </li>
+7:    <% end %>
+8:    <p>
+9:        wahey
+10:        </p>
+11:    <p>
+12:    <%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+13:    <%= Flight.first.date %><br>
+14:    <%= Flight.first.duration %> minutes
+15:    </p>
+16:    <p>
+17:    <%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+18:    <%= Flight.second.date %><br>
+19:    <%= Flight.second.duration %> minutes
+20:    </p>
+21:    <p>
+22:    <%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+23:    <%= Flight.third.date %><br>
+24:    <%= Flight.third.duration %> minutes
+25:    </p>
+26:    <p>
+27:    <%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+28:    <%= Flight.fourth.date %><br>
+29:    <%= Flight.fourth.duration %> minutes
+30:    </p>
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+):
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+Started GET "/" for ::1 at 2025-06-23 15:41:17 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <%@flights.each do |flight|%>
+    <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+            <%= flight.date %><br>
+            <%= flight.duration %> minutes
+</ul>   </li>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <%@flights.each do |flight|%>
+    <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+            <%= flight.date %><br>
+            <%= flight.duration %> minutes
+</ul>   </li>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+):
+1:    <ul>
+2:        <%@flights.each do |flight|%>
+3:        <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+4:                <%= flight.date %><br>
+5:                <%= flight.duration %> minutes
+6:    </ul>   </li>
+7:    <% end %>
+8:    <p>
+9:        wahey
+10:        </p>
+11:    <p>
+12:    <%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+13:    <%= Flight.first.date %><br>
+14:    <%= Flight.first.duration %> minutes
+15:    </p>
+16:    <p>
+17:    <%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+18:    <%= Flight.second.date %><br>
+19:    <%= Flight.second.duration %> minutes
+20:    </p>
+21:    <p>
+22:    <%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+23:    <%= Flight.third.date %><br>
+24:    <%= Flight.third.duration %> minutes
+25:    </p>
+26:    <p>
+27:    <%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+28:    <%= Flight.fourth.date %><br>
+29:    <%= Flight.fourth.duration %> minutes
+30:    </p>
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+):
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+Started GET "/" for ::1 at 2025-06-23 15:43:06 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | GC: 0.2ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 10.3ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <%@flights.each do |flight|%>
+    <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+            <%= flight.date %><br>
+            <%= flight.duration %> minutes
+</ul>   </li>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <%@flights.each do |flight|%>
+    <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+            <%= flight.date %><br>
+            <%= flight.duration %> minutes
+</ul>   </li>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+):
+1:    <ul>
+2:        <%@flights.each do |flight|%>
+3:        <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+4:                <%= flight.date %><br>
+5:                <%= flight.duration %> minutes
+6:    </ul>   </li>
+7:    <% end %>
+8:    <p>
+9:        wahey
+10:        </p>
+11:    <p>
+12:    <%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+13:    <%= Flight.first.date %><br>
+14:    <%= Flight.first.duration %> minutes
+15:    </p>
+16:    <p>
+17:    <%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+18:    <%= Flight.second.date %><br>
+19:    <%= Flight.second.duration %> minutes
+20:    </p>
+21:    <p>
+22:    <%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+23:    <%= Flight.third.date %><br>
+24:    <%= Flight.third.duration %> minutes
+25:    </p>
+26:    <p>
+27:    <%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+28:    <%= Flight.fourth.date %><br>
+29:    <%= Flight.fourth.duration %> minutes
+30:    </p>
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+):
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+Started GET "/" for ::1 at 2025-06-23 15:44:16 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.8ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <%@flights.each do |flight|%>
+    <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+            <%= flight.date %><br>
+            <%= flight.duration %> minutes
+</ul>   </li>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <ul>
+    <%@flights.each do |flight|%>
+    <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+            <%= flight.date %><br>
+            <%= flight.duration %> minutes
+</ul>   </li>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+):
+1:    <ul>
+2:        <%@flights.each do |flight|%>
+3:        <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+4:                <%= flight.date %><br>
+5:                <%= flight.duration %> minutes
+6:    </ul>   </li>
+7:    <% end %>
+8:    <p>
+9:        wahey
+10:        </p>
+11:    <p>
+12:    <%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+13:    <%= Flight.first.date %><br>
+14:    <%= Flight.first.duration %> minutes
+15:    </p>
+16:    <p>
+17:    <%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+18:    <%= Flight.second.date %><br>
+19:    <%= Flight.second.duration %> minutes
+20:    </p>
+21:    <p>
+22:    <%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+23:    <%= Flight.third.date %><br>
+24:    <%= Flight.third.duration %> minutes
+25:    </p>
+26:    <p>
+27:    <%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+28:    <%= Flight.fourth.date %><br>
+29:    <%= Flight.fourth.duration %> minutes
+30:    </p>
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+):
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+Started GET "/" for ::1 at 2025-06-23 15:45:26 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 3.9ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p>
+    <%@flights.each do |flight|%>
+        <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+        <%= flight.date %><br>
+        <%= flight.duration %> minutes<br>
+</p>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+)
+Caused by: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+)
+
+Information for: ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p>
+    <%@flights.each do |flight|%>
+        <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+        <%= flight.date %><br>
+        <%= flight.duration %> minutes<br>
+</p>
+<% end %>
+<p>
+    wahey
+    </p>
+<p>
+<%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+<%= Flight.first.date %><br>
+<%= Flight.first.duration %> minutes
+</p>
+<p>
+<%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+<%= Flight.second.date %><br>
+<%= Flight.second.duration %> minutes
+</p>
+<p>
+<%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+<%= Flight.third.date %><br>
+<%= Flight.third.duration %> minutes
+</p>
+<p>
+<%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+<%= Flight.fourth.date %><br>
+<%= Flight.fourth.duration %> minutes
+</p>
+):
+1:    <p>
+2:        <%@flights.each do |flight|%>
+3:            <%= <li>flight.departing_airport.city%>to<%=flight.arrival_airport.city%><br>
+4:            <%= flight.date %><br>
+5:            <%= flight.duration %> minutes<br>
+6:    </p>
+7:    <% end %>
+8:    <p>
+9:        wahey
+10:        </p>
+11:    <p>
+12:    <%= Flight.first.departing_airport.city %> to <%= Flight.first.arrival_airport.city %><br>
+13:    <%= Flight.first.date %><br>
+14:    <%= Flight.first.duration %> minutes
+15:    </p>
+16:    <p>
+17:    <%= Flight.second.departing_airport.city %> to <%= Flight.second.arrival_airport.city %><br>
+18:    <%= Flight.second.date %><br>
+19:    <%= Flight.second.duration %> minutes
+20:    </p>
+21:    <p>
+22:    <%= Flight.third.departing_airport.city %> to <%= Flight.third.arrival_airport.city %><br>
+23:    <%= Flight.third.date %><br>
+24:    <%= Flight.third.duration %> minutes
+25:    </p>
+26:    <p>
+27:    <%= Flight.fourth.departing_airport.city %> to <%= Flight.fourth.arrival_airport.city %><br>
+28:    <%= Flight.fourth.date %><br>
+29:    <%= Flight.fourth.duration %> minutes
+30:    </p>
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+
+Information for cause: ActiveSupport::SyntaxErrorProxy (/Users/mpeer/Documents/repos/flight-booker/app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+...eeze; @output_buffer.append=( <li>flight.departing_airport.c...
+...                              ^
+):
+  
+app/views/flights/index.html.erb:3: syntax error, unexpected '<'
+Started GET "/" for ::1 at 2025-06-23 15:46:41 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  Rendered flights/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 4.2ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil)
+Caused by: NoMethodError (undefined method `each' for nil)
+
+Information for: ActionView::Template::Error (undefined method `each' for nil):
+    1: <p>
+    2:     <%@flights.each do |f|%>
+    3:         <%= f.departing_airport.city%> to <%=f.arrival_airport.city%><br>
+    4:         <%= f.date %><br>
+    5:         <%= f.duration %> minutes<br>
+  
+app/views/flights/index.html.erb:2
+
+Information for cause: NoMethodError (undefined method `each' for nil):
+  
+app/views/flights/index.html.erb:2
+Started GET "/" for ::1 at 2025-06-23 15:51:20 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (1.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.7ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 106 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 108 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mFlight Load (0.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:13
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:14
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:19
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:23
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:24
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:28
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:29
+  Rendered flights/index.html.erb within layouts/application (Duration: 27.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | GC: 0.0ms)
+Completed 200 OK in 51ms (Views: 16.1ms | ActiveRecord: 13.4ms (35 queries, 22 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 15:51:49 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 106 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 108 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:13
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:14
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:19
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:23
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:24
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:28
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:29
+  Rendered flights/index.html.erb within layouts/application (Duration: 24.5ms | GC: 0.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | GC: 1.1ms)
+Completed 200 OK in 52ms (Views: 17.9ms | ActiveRecord: 8.6ms (35 queries, 22 cached) | GC: 1.1ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 15:52:01 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 106 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 108 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:13
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:14
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:19
+  [1m[36mFlight Load (0.8ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:23
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:24
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:28
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:29
+  Rendered flights/index.html.erb within layouts/application (Duration: 28.2ms | GC: 2.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | GC: 2.8ms)
+Completed 200 OK in 51ms (Views: 18.5ms | ActiveRecord: 11.8ms (35 queries, 22 cached) | GC: 2.8ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 15:52:13 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.5ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.3ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 106 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 108 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:13
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:14
+  [1m[36mFlight Load (0.1ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:19
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:23
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:24
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:28
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:29
+  Rendered flights/index.html.erb within layouts/application (Duration: 26.5ms | GC: 0.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | GC: 0.7ms)
+Completed 200 OK in 50ms (Views: 16.7ms | ActiveRecord: 11.6ms (35 queries, 22 cached) | GC: 0.7ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 15:52:14 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.9ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.1ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 106 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.4ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 108 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:12
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:13
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:14
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:17
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:18
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 1[0m
+  ↳ app/views/flights/index.html.erb:19
+  [1m[36mFlight Load (0.2ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:22
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:23
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 2[0m
+  ↳ app/views/flights/index.html.erb:24
+  [1m[36mFlight Load (0.3ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:27
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:28
+  [1m[36mCACHE Flight Load (0.0ms)[0m  [1m[34mSELECT "flights".* FROM "flights" ORDER BY "flights"."id" ASC LIMIT 1 OFFSET 3[0m
+  ↳ app/views/flights/index.html.erb:29
+  Rendered flights/index.html.erb within layouts/application (Duration: 21.7ms | GC: 2.7ms)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | GC: 2.7ms)
+Completed 200 OK in 61ms (Views: 19.2ms | ActiveRecord: 3.5ms (35 queries, 22 cached) | GC: 2.7ms)
+
+
+Started GET "/" for ::1 at 2025-06-23 15:53:11 -0400
+Processing by FlightsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering flights/index.html.erb within layouts/application
+  [1m[36mFlight Load (0.4ms)[0m  [1m[34mSELECT "flights".* FROM "flights" /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:2
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 102 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 103 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 105 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 101 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 114 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mCACHE Airport Load (0.0ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 113 LIMIT 1[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 106 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  [1m[36mAirport Load (0.2ms)[0m  [1m[34mSELECT "airports".* FROM "airports" WHERE "airports"."id" = 108 LIMIT 1 /*action='index',application='FlightBooker',controller='flights'*/[0m
+  ↳ app/views/flights/index.html.erb:3
+  Rendered flights/index.html.erb within layouts/application (Duration: 16.4ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | GC: 0.3ms)
+Completed 200 OK in 39ms (Views: 9.0ms | ActiveRecord: 9.2ms (11 queries, 2 cached) | GC: 0.3ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='FlightBooker'*/[0m
