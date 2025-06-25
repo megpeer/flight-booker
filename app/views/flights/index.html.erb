@@ -1,3 +1,19 @@
+
+<%= form_with url:"/flights/", method: "get" do |f| %>
+<%= f.label :departing_airport, "Departure Airport" %>
+<%= f.collection_select :airport_id, Airport.order(:city), :id, :city%>
+<br>
+<%= f.label :arrival_airport, "Arrival Airport" %>
+<%= f.collection_select :airport_id, Airport.order(:city), :id, :city%>
+<br>
+<%= f.label :date, "Date" %>
+<%= select_tag(:date, options_for_select(@date.map { |f| [f.date.strftime("%b, %d, %y"), f.date.to_date] })) %>
+<br>
+<%= f.label :passengers, "Passengers" %>
+<%= f.number_field :passengers, in: 1.0..4.0, step: 1 %>
+<br>
+<%= f.submit "search" %>
+<% end %>
 <p>
     <%@flights.each do |f|%>
         <%= f.departing_airport.city%> to <%=f.arrival_airport.city%><br>
