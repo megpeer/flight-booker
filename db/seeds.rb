@@ -25,11 +25,14 @@ yqx = Airport.create!(code: 'YQX', city: 'Gander')
 yqm = Airport.create!(code: 'YQM', city: 'Moncton')
 yeg = Airport.create!(code: 'YEG', city: 'Edmonton')
 p "Created #{Airport.count} Airports"
-Flight.create!([
-                 { departing_airport: yyz, arrival_airport: yvr, date: Date.today + 1.day, duration: 360 },
-                 { departing_airport: yyc, arrival_airport: yul, date: Date.today + 2.days, duration: 240 },
-                 { departing_airport: yqm, arrival_airport: yyz, date: Date.today + 3.days, duration: 180 },
-                 { departing_airport: yeg, arrival_airport: yqm, date: Date.today + 4.days, duration: 300 },
-                 { departing_airport: yyt, arrival_airport: yfc, date: Date.today + 5.days, duration: 210 }
-               ])
+100.times do
+  departing_airport, arrival_airport = Airport.all.sample(2).map(&:id)
+  date = Date.today + rand(10..20).days
+  duration = (60..500)
+
+  Flight.find_or_create_by!(departing_airport_id: departing_airport,
+                            arrival_airport_id: arrival_airport,
+                            date: date,
+                            duration: duration)
+end
 p "Created #{Flight.count} Flights"
