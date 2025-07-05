@@ -6,6 +6,13 @@ Rails.application.routes.draw do
       get :search
     end
   end
+
+  resources :flights do
+    member do
+      post :search
+    end
+  end
+
   resources :airports do
     resources :flights
   end

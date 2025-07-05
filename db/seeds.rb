@@ -23,7 +23,6 @@ yow = Airport.create!(code: 'YOW', city: 'Ottawa')
 yqb = Airport.create!(code: 'YQB', city: 'Quebec City')
 yqx = Airport.create!(code: 'YQX', city: 'Gander')
 yqm = Airport.create!(code: 'YQM', city: 'Moncton')
-yeg = Airport.create!(code: 'YEG', city: 'Edmonton')
 p "Created #{Airport.count} Airports"
 100.times do
   departing_airport, arrival_airport = Airport.all.sample(2).map(&:id)

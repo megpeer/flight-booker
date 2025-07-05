@@ -1,0 +1,14 @@
+<% if @flights.any? %>
+<p>Available flights:</p>
+<%@flights.each do |f|%>
+        <p>
+            <%= f.departing_airport.city%> to <%=f.arrival_airport.city%><br>
+            <%= f.date %><br>
+            <%= f.duration %> minutes<br>
+        </p>
+<% end %>
+<% else %>
+<p>
+    no flights match those parameters. please search again.
+</p>
+<% end %>
