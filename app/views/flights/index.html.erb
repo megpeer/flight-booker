@@ -14,4 +14,9 @@
 <br>
 <%= f.submit "search" %>
 <% end %>
+<p>
+    test flight:
+</p>
+            <%= Flight.first.departing_airport.city%> to <%=Flight.first.arrival_airport.city%><br>
+            <%= Flight.first.date %><br>
 <%= render "search" %>

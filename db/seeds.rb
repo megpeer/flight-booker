@@ -24,10 +24,10 @@ yqb = Airport.create!(code: 'YQB', city: 'Quebec City')
 yqx = Airport.create!(code: 'YQX', city: 'Gander')
 yqm = Airport.create!(code: 'YQM', city: 'Moncton')
 p "Created #{Airport.count} Airports"
-100.times do
+1000.times do
   departing_airport, arrival_airport = Airport.all.sample(2).map(&:id)
   date = Date.today + rand(10..20).days
-  duration = (60..500)
+  duration = rand(60..500).to_i
 
   Flight.find_or_create_by!(departing_airport_id: departing_airport,
                             arrival_airport_id: arrival_airport,
