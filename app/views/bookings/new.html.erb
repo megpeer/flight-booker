@@ -1,0 +1,20 @@
+
+<% if @flights.any? %>
+<p>Available flights:</p>
+<%= form_with url: new_booking_path, method: :get do |b| %>
+<%=b.hidden_field :passengers, value: params[:passengers] %>
+<%@flights.each do |f|%>
+        <p>
+            <%= f.departing_airport.city%> to <%=f.arrival_airport.city%>
+            <%= b.radio_button :flight_id, f.id %><br>
+            <%= f.date %><br>
+            <%= f.duration %> minutes<br>
+        </p>
+<% end %>
+<%= b.submit "select flight"%>
+<% end %>
+<% else %>
+<p>
+    no flights match those parameters. please search again.
+</p>
+<% end %>
