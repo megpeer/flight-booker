@@ -1,0 +1,16 @@
+<p>
+Flight:<br>
+<%= @booking.flight.departing_airport.city %> to <%= @booking.flight.arrival_airport.city%><br>
+Date: <%= @booking.flight.date %><br>
+Duration: <%= @booking.flight.duration %> minutes<br>
+</p>
+<p>
+Passenger Info:
+</p>
+<%@booking.passengers.each do |p|%>
+    <p>
+        Name: <%= p.name %><br>
+        Email: <%= p.email %><br>
+    </p>
+<% end %>
+<%= link_to "Book another flight!", flights_path %>

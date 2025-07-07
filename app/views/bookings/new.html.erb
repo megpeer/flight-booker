@@ -1,20 +1,28 @@
 
-<% if @flights.any? %>
-<p>Available flights:</p>
-<%= form_with url: new_booking_path, method: :get do |b| %>
-<%=b.hidden_field :passengers, value: params[:passengers] %>
-<%@flights.each do |f|%>
-        <p>
-            <%= f.departing_airport.city%> to <%=f.arrival_airport.city%>
-            <%= b.radio_button :flight_id, f.id %><br>
-            <%= f.date %><br>
-            <%= f.duration %> minutes<br>
-        </p>
-<% end %>
-<%= b.submit "select flight"%>
-<% end %>
-<% else %>
 <p>
-    no flights match those parameters. please search again.
+    Please fill out passenger info to complete booking
 </p>
+<p>
+    Flight:
+</p>
+<p>
+<%= @booking.flight.departing_airport.city %> to <%= @booking.flight.arrival_airport.city%><br>
+Date: <%= @booking.flight.date %>
+</p>
+<p>Passenger info:</p>
+<%= form_with model: @booking do |b| %>
+    <%=b.hidden_field :flight_id %>
+        <%@booking.passengers.each_with_index do |psg, index|%>
+                <p>
+        <p>Passenger # <%= index + 1 %><br></p>
+            <%= fields_for :passengers, psg do |p| %>
+                <%= p.label :name, "Name" %>
+                <%= p.text_field :name, required: true%><br>
+
+                <%= p.label :email, "Email" %>
+                <%= p.email_field :email, required: true%><br>
+            <% end %>
+                </p>
+        <% end %>
+<%= b.submit "create booking"%>
 <% end %>
