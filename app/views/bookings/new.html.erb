@@ -1,0 +1,29 @@
+
+<p>
+    Please fill out passenger info to complete booking
+</p>
+<p>
+    Flight:
+</p>
+<p>
+<%= @booking.flight.departing_airport.city %> to <%= @booking.flight.arrival_airport.city%><br>
+Date: <%= @booking.flight.date %>
+</p>
+<p>Passenger info:</p>
+<%= form_with model: @booking, method: "post" do |book| %>
+    <%=book.hidden_field :flight_id, value: @flight.id %>
+            <%= book.fields_for :passengers do |p| %>
+                <%= p.label :name, "Name" %>
+                <%= p.text_field :name, required: true %><br>
+
+                <%= p.label :email, "Email" %>
+                <%= p.email_field :email, required: true %><br>
+            <% end %>
+                </p>
+
+<%= book.submit "create booking"%>
+<% end %>
+
+<% if flash.now[:alert] %>
+<%= flash.now[:alert] %>
+<% end %>
