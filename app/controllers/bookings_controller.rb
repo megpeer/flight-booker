@@ -8,12 +8,9 @@ class BookingsController < ApplicationController
 
   def create
     @booking = Booking.new(booking_params)
-    if @booking.save
-      redirect_to @booking, notice: 'booking has been saved!'
-      puts 'saved booking'
-    else
-      flash.now[:alert] = 'could not save booking'
-    end
+    return unless @booking.save
+
+    redirect_to @booking
   end
 
   def show
@@ -23,6 +20,6 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:flight_id, passenger_info: %i[name email])
+    params.expect(booking: [:flight_id, passengers_attributes: [[:name, :email]]]) # rubocop:disable Style/SymbolArray,Style/HashAsLastArrayItem
   end
 end

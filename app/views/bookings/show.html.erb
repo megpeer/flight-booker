@@ -9,8 +9,8 @@ Passenger Info:
 </p>
 <%@booking.passengers.each do |p|%>
     <p>
-        Name: <%= p.name %><br>
-        Email: <%= p.email %><br>
+        <%= p.name %><br>
+        <%= p.email %>
     </p>
 <% end %>
 <%= link_to "Book another flight!", flights_path %>

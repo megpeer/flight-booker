@@ -10,19 +10,20 @@
 Date: <%= @booking.flight.date %>
 </p>
 <p>Passenger info:</p>
-<%= form_with model: @booking do |b| %>
-    <%=b.hidden_field :flight_id %>
-        <%@booking.passengers.each_with_index do |psg, index|%>
-                <p>
-        <p>Passenger # <%= index + 1 %><br></p>
-            <%= fields_for :passengers, psg do |p| %>
+<%= form_with model: @booking, method: "post" do |book| %>
+    <%=book.hidden_field :flight_id, value: @flight.id %>
+            <%= book.fields_for :passengers do |p| %>
                 <%= p.label :name, "Name" %>
-                <%= p.text_field :name, required: true%><br>
+                <%= p.text_field :name, required: true %><br>
 
                 <%= p.label :email, "Email" %>
-                <%= p.email_field :email, required: true%><br>
+                <%= p.email_field :email, required: true %><br>
             <% end %>
                 </p>
-        <% end %>
-<%= b.submit "create booking"%>
+
+<%= book.submit "create booking"%>
+<% end %>
+
+<% if flash.now[:alert] %>
+<%= flash.now[:alert] %>
 <% end %>
