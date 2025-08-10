@@ -1,24 +1,19 @@
-# README
+# Flight-Booker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project created while following the Odin Project Ruby on Rails Curriculum. View the lesson details here:[flight booker](https://www.theodinproject.com/lessons/ruby-on-rails-flight-booker)
 
-Things you may want to cover:
+## Goals
 
-* Ruby version
+The main purpose of this project is to gain experience with advanced forms. The app was built to simulate the steps of a typical flighcheckout process for booking a one-way flight. 
 
-* System dependencies
 
-* Configuration
+## Usage
+- Seed database
+- Enter desired dates and airports, and search for available flights
+- Choose from the list of flights
+- Enter passenger information for up to 4 passengers
 
-* Database creation
+## Tech Stack
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby on Rails
+- SQLite3 (development)
