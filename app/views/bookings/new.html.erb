@@ -10,6 +10,8 @@
 Date: <%= @booking.flight.date %>
 </p>
 <p>Passenger info:</p>
+<button>add passenger</button>
+<p>
 <%= form_with model: @booking, method: "post" do |book| %>
     <%=book.hidden_field :flight_id, value: @flight.id %>
             <%= book.fields_for :passengers do |p| %>
@@ -20,8 +22,11 @@ Date: <%= @booking.flight.date %>
                 <%= p.email_field :email, required: true %><br>
             <% end %>
                 </p>
-
+                </p>
+<button>delete passenger</button>
+<p>
 <%= book.submit "create booking"%>
+</p>
 <% end %>
 
 <% if flash.now[:alert] %>

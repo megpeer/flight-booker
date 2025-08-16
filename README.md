@@ -17,3 +17,4 @@ The main purpose of this project is to gain experience with advanced forms. The 
 
 - Ruby on Rails
 - SQLite3 (development)
+- Stimulus/Hotwire (nested forms)
