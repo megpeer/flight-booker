@@ -1,34 +1,49 @@
 
 <p>
-    Please fill out passenger info to complete booking
-</p>
-<p>
-    Flight:
-</p>
-<p>
+    Please fill out passenger info to complete booking<br>
+    Flight:<br>
 <%= @booking.flight.departing_airport.city %> to <%= @booking.flight.arrival_airport.city%><br>
 Date: <%= @booking.flight.date %>
 </p>
 <p>Passenger info:</p>
-<button>add passenger</button>
+
 <p>
 <%= form_with model: @booking, method: "post" do |book| %>
-    <%=book.hidden_field :flight_id, value: @flight.id %>
-            <%= book.fields_for :passengers do |p| %>
-                <%= p.label :name, "Name" %>
-                <%= p.text_field :name, required: true %><br>
 
-                <%= p.label :email, "Email" %>
-                <%= p.email_field :email, required: true %><br>
-            <% end %>
-                </p>
-                </p>
-<button>delete passenger</button>
-<p>
-<%= book.submit "create booking"%>
+
+    <%=book.hidden_field :flight_id, value: @flight.id %>
+    <div data-controller='nested-form', data-nested-form-pattern-to-replace-with-index-value="PASSENGER_INDEX" >
+        <button data-action="mousedown->nested-form#addItem">
+            add passenger!
+        </button >
+            <template data-nested-form-target="formTemplate">
+                <%= book.fields_for(:passengers, Passenger.new, child_index: "PASSENGER_INDEX") do |p| %>
+                    <%= p.label :name, "Name" %>
+                    <%= p.text_field :name, required: true %>
+
+                    <%= p.label :email, "Email" %>
+                    <%= p.email_field :email, required: true %>
+
+                <% end %>
+            </template>
+            
+            <div data-nested-form-target="itemsList">
+                <%= book.fields_for(:passengers) do |p| %>
+                <p>
+                    <%= p.label :name, "Name" %>
+                    <%= p.text_field :name, required: true %>
+
+                    <%= p.label :email, "Email" %>
+                    <%= p.email_field :email, required: true %>
+                    </p>
+
+                <% end %>
+            </div>
 </p>
+<%= book.submit "create booking"%>
 <% end %>
 
+</div>
 <% if flash.now[:alert] %>
 <%= flash.now[:alert] %>
 <% end %>

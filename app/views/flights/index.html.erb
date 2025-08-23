@@ -9,8 +9,8 @@
 <%= f.label :date, "Date" %>
 <%= f.select :date, options_for_select(@date.map { |f| [f.date.strftime("%b, %d, %y"), f.date.to_date] }) %>
 <br>
-<%= f.label :passengers, "Number of Passengers" %>
-<%= f.number_field :passengers, in: 1.0..4.0, step: 1, :value => (1) %>
+<%#= f.label :passengers, "Number of Passengers" %>
+<%#= f.number_field :passengers, in: 1.0..4.0, step: 1, :value => (1) %>
 <br>
 <%= f.submit "search" %>
 <% end %>
