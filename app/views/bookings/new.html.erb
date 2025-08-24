@@ -18,12 +18,15 @@ Date: <%= @booking.flight.date %>
         </button >
             <template data-nested-form-target="formTemplate">
                 <%= book.fields_for(:passengers, Passenger.new, child_index: "PASSENGER_INDEX") do |p| %>
+                <p data-nested-form-target="item">
                     <%= p.label :name, "Name" %>
                     <%= p.text_field :name, required: true %>
 
                     <%= p.label :email, "Email" %>
                     <%= p.email_field :email, required: true %>
-
+                    <button type="button" data-action="mousedown->nested-form#remove">x</button>
+                    <%= p.hidden_field :_destroy %>
+                </p>
                 <% end %>
             </template>
             
