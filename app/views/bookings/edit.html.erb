@@ -1,0 +1,35 @@
+
+<p>
+    Please fill out passenger info to complete booking<br>
+    Flight:<br>
+<%= @booking.flight.departing_airport.city %> to <%= @booking.flight.arrival_airport.city%><br>
+Date: <%= @booking.flight.date %>
+</p>
+<p>Passenger info:</p>
+<button>add passenger</button>
+<p>
+<%= form_with model: @booking, method: "post", data: {controller: 'nested-form' } do |book| %>
+
+    <%=book.hidden_field :flight_id, value: @flight.id %>
+
+
+            <%= book.fields_for(:passengers) do |p| %>
+                <%= p.label :name, "Name" %>
+                <%= p.text_field :name, required: true %><br>
+
+                <%= p.label :email, "Email" %>
+                <%= p.email_field :email, required: true %><br>
+                <% if p.object.persisted? %>
+                <label>
+                    <%= sprint_form.check_box :_destroy %>
+                    remove
+                </label>
+                <% end %>
+            <% end %>
+</p>
+<button>delete passenger</button>
+<p>
+<%= book.submit "create booking"%>
+</p>
+<% end %>
+
