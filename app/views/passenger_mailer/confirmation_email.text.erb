@@ -1,0 +1,7 @@
+Hello, <%= @passenger.name %>!
+you have sucessfully booked your flight. your flight info is:
+    <%= @passenger.booking.flight.departing_airport.city %> to <%= @passenger.booking.flight.arrival_airport.city%>
+    Date: <%= @passenger.booking.flight.date %>
+    Duration: <%= @passenger.booking.flight.duration %> minutes
+
+have a great day!
