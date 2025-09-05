@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "@stimulus-components/rails-nested-form": "^5.0.0"
+  },
+  "scripts": {
+    "build:css": "sass ./app/assets/stylesheets/application.bulma.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   }
 }

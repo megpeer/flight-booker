@@ -1,17 +1,14 @@
 
 <%= form_with url: flights_path, method: :get do |f| %>
-<%= f.label :departing_airport, "Departure Airport" %>
+<%= f.label :departing_airport, "From" %>
 <%= f.select :departing_airport, options_for_select(@airport.map { |airport| airport.city }) %>
 <br>
-<%= f.label :arrival_airport, "Arrival Airport" %>
+<%= f.label :arrival_airport, "To" %>
 <%= f.select :arrival_airport, options_for_select(@airport.map {|airport| airport.city })%>
 <br>
 <%= f.label :date, "Date" %>
 <%= f.select :date, options_for_select(@date.map { |f| [f.date.strftime("%b, %d, %y"), f.date.to_date] }) %>
 <br>
-<%#= f.label :passengers, "Number of Passengers" %>
-<%#= f.number_field :passengers, in: 1.0..4.0, step: 1, :value => (1) %>
-<br>
-<%= f.submit "search" %>
+<%= f.submit "find flights", class: "button is-primary is-outlined is-fullwidth" %>
 <% end %>
 <%= render "search" %>
