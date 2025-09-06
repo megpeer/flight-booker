@@ -1,14 +1,35 @@
 
+<div class="container is-max-tablet">
+<div class="box">
+    <div>
+    Search Flights:
+    </div>
 <%= form_with url: flights_path, method: :get do |f| %>
-<%= f.label :departing_airport, "From" %>
-<%= f.select :departing_airport, options_for_select(@airport.map { |airport| airport.city }) %>
-<br>
-<%= f.label :arrival_airport, "To" %>
-<%= f.select :arrival_airport, options_for_select(@airport.map {|airport| airport.city })%>
-<br>
-<%= f.label :date, "Date" %>
-<%= f.select :date, options_for_select(@date.map { |f| [f.date.strftime("%b, %d, %y"), f.date.to_date] }) %>
-<br>
-<%= f.submit "find flights", class: "button is-primary is-outlined is-fullwidth" %>
-<% end %>
+    <div class="box">
+        <div class="is-flex is-flex-direction-row is-justify-content-space-evenly">
+                <div class="select is-primary is-flex is-flex-direction-column">
+            <%= f.label :departing_airport, "From", class: "block" %>
+            <%= f.select :departing_airport, options_for_select(@airport.map { |airport| airport.city }), class: "block" %>
+                </div>
+                <div class="select is-primary is-flex is-flex-direction-column">
+            <%= f.label :arrival_airport, "To", class: "block" %>
+            <%= f.select :arrival_airport, options_for_select(@airport.map {|airport| airport.city }), class: "block" %>
+                </div>
+                <div class="select is-primary is-flex is-flex-direction-column">
+            <%= f.label :date, "Date", class: "block" %>
+            <%= f.select :date, options_for_select(@date.map { |f| [f.date.strftime("%b, %d, %y"), f.date.to_date] }), class: "block" %>
+                </div>
+        </div><br><br><br>
+                <div>
+            <%= f.submit "search", class: "button is-primary is-fullwidth" %>
+            <% end %>
+                </div>
+    </div>
+</div>
+
+
+
+<div class="box">
 <%= render "search" %>
+</div>
+</div>

@@ -1,20 +1,47 @@
 
 <% if @flights.any? %>
-<p>Available flights:</p>
+<div>
+Available flights:
+</div>
+<div class="container is-max-tablet">
+<div class="box container is-fluid">
 <%= form_with url: new_booking_path, method: :get do |b| %>
 <%=b.hidden_field :passengers, value: params[:passengers] %>
 <%@flights.each do |f|%>
-        <p>
-            <%= f.departing_airport.city%> to <%=f.arrival_airport.city%>
-            <%= b.radio_button :flight_id, f.id %><br>
-            <%= f.date %><br>
-            <%= f.duration %> minutes<br>
-        </p>
+        <div class="box container is-fluid">
+                <div>
+                    <div class="columns columns is-vcentered is-2">
+                        <div class="column has-text-right">
+                            <div class="control is-primary">
+                            <%= b.radio_button :flight_id, f.id %>
+                            </div>
+                        </div>
+                        
+                        <div class="column is-two-thirds">
+                            <div>
+                            <%= f.departing_airport.city%> to <%=f.arrival_airport.city%>
+                            </div> 
+                            <div>
+                            <%= f.date %>
+                            </div>
+                            <div>
+                            <%= f.duration %> minutes
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
 <% end %>
-<%= b.submit "select flight", class: "button is-primary is-outlined is-fullwidth"%>
+</div>
+<div>
+<%= b.submit "select flight", class: "button is-primary is-fullwidth"%>
+
+</div>
+</div>
 <% end %>
 <% else %>
-<p>
+<div>
     no flights match those parameters. please search again.
-</p>
+</div>
 <% end %>
