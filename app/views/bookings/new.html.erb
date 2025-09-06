@@ -1,51 +1,61 @@
 
-<p>
-    Please fill out passenger info to complete booking<br>
-    Flight:<br>
-<%= @booking.flight.departing_airport.city %> to <%= @booking.flight.arrival_airport.city%><br>
-Date: <%= @booking.flight.date %>
-</p>
-<p>Passenger info:</p>
+<div class="container is-max-tablet">
+    <div class="box">
+        <div>Flight:</div>
+        <div class="box">
+            <%= @booking.flight.departing_airport.city %> to <%= @booking.flight.arrival_airport.city%><br>
+            Date: <%= @booking.flight.date %>
+        </div>
+    </div>
 
-<p>
-<%= form_with model: @booking, method: "post" do |book| %>
+    <div class="box">
+        <div>Please fill out passenger info to complete booking</div>
 
+        <div class="box">
+            <%= form_with model: @booking, method: "post" do |book| %>
+                <%=book.hidden_field :flight_id, value: @flight.id %>
+                <div data-controller='nested-form', data-nested-form-pattern-to-replace-with-index-value="PASSENGER_INDEX">
+                        <div class="columns">
+                            <div class="column">    
+                                <button data-action="mousedown->nested-form#addItem", class="button is-primary is-small is-outlined is-flex-grow-0">add passenger!</button>
+                            </div>
+                            <div class="column is-four-fifths">
+                                <template data-nested-form-target="formTemplate">
+                                    <%= book.fields_for(:passengers, Passenger.new, child_index: "PASSENGER_INDEX") do |p| %>
 
-    <%=book.hidden_field :flight_id, value: @flight.id %>
-    <div data-controller='nested-form', data-nested-form-pattern-to-replace-with-index-value="PASSENGER_INDEX" >
-        <button data-action="mousedown->nested-form#addItem">
-            add passenger!
-        </button >
-            <template data-nested-form-target="formTemplate">
-                <%= book.fields_for(:passengers, Passenger.new, child_index: "PASSENGER_INDEX") do |p| %>
-                <p data-nested-form-target="item">
-                    <%= p.label :name, "Name" %>
-                    <%= p.text_field :name, required: true %>
+                                    <div data-nested-form-target="item", class="block">
+                                        <%= p.label :name, "Name" %>
+                                        <%= p.text_field :name, required: true, class: "input is-primary" %>
 
-                    <%= p.label :email, "Email" %>
-                    <%= p.email_field :email, required: true %>
-                    <button type="button" data-action="mousedown->nested-form#remove", class="delete"></button>
-                    <%= p.hidden_field :_destroy %>
-                </p>
-                <% end %>
-            </template>
-            
-            <div data-nested-form-target="itemsList">
-                <%= book.fields_for(:passengers) do |p| %>
-                <p>
-                    <%= p.label :name, "Name" %>
-                    <%= p.text_field :name, required: true %>
+                                        <%= p.label :email, "Email" %>
+                                        <%= p.email_field :email, required: true, class: "input is-primary" %>
+                                        <button type="button" data-action="mousedown->nested-form#remove", class="delete"></button>
+                                        <%= p.hidden_field :_destroy %>
+                                    </div>
 
-                    <%= p.label :email, "Email" %>
-                    <%= p.email_field :email, required: true %>
-                    </p>
+                                    <% end %>
+                                </template>
+                                
+                                <div data-nested-form-target="itemsList">
+                                    <%= book.fields_for(:passengers) do |p| %>
+                                    <div class="block">
+                                        <%= p.label :name, "Name" %>
+                                        <%= p.text_field :name, required: true, class: "input is-primary" %>
 
-                <% end %>
-            </div>
-</p>
-<%= book.submit "create booking", class: "button is-primary is-outlined is-fullwidth" %>
-<% end %>
+                                        <%= p.label :email, "Email" %>
+                                        <%= p.email_field :email, required: true, class: "input is-primary" %>
+                                    </div>
 
+                                    <% end %>
+                                </div>
+                                </div>
+                        </div>
+    </div>
+    </div>
+    <%= book.submit "create booking", class: "button is-primary is-fullwidth" %>
+    <% end %>
+
+    </div>
 </div>
 <% if flash.now[:alert] %>
 <%= flash.now[:alert] %>
