@@ -1,16 +1,23 @@
-<p>
-Flight:<br>
-<%= @booking.flight.departing_airport.city %> to <%= @booking.flight.arrival_airport.city%><br>
-Date: <%= @booking.flight.date %><br>
-Duration: <%= @booking.flight.duration %> minutes<br>
-</p>
-<p>
-Passenger Info:
-</p>
-<%@booking.passengers.each do |p|%>
-    <p>
-        <%= p.name %><br>
-        <%= p.email %>
-    </p>
-<% end %>
-<%= link_to "Book another flight!", flights_path %>
+<div class="container is-max-tablet box">
+    <div>
+    <div>Flight:</div>
+        <div class="box">
+            <div><%= @booking.flight.departing_airport.city %> to <%= @booking.flight.arrival_airport.city%></div>
+            <div>Date: <%= @booking.flight.date %></div>
+            <div>Duration: <%= @booking.flight.duration %> minutes</div>
+        </div>
+        <div>Passenger Info:</div>
+        <div class="box container is-fluid">
+        <%@booking.passengers.each do |p|%>
+            <div class="box">
+                <div>Name: <%= p.name %></div>
+                <div><%#= p.email %>[EMAIL-redacted]</div>
+            </div>
+        <% end %>
+        </div>
+    </div>
+
+    <div>
+    <%= button_to "Book another flight!", flights_path, method: :get, class: "button is-primary is-fullwidth" %>
+    </div>
+</div>

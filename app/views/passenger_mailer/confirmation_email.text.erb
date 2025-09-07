@@ -1,7 +1,15 @@
+
 Hello, <%= @passenger.name %>!
-you have sucessfully booked your flight. your flight info is:
-    <%= @passenger.booking.flight.departing_airport.city %> to <%= @passenger.booking.flight.arrival_airport.city%>
-    Date: <%= @passenger.booking.flight.date %>
-    Duration: <%= @passenger.booking.flight.duration %> minutes
+Thank you for testing my booking website prototype!
+
+your flight info is:
+<%= @passenger.booking.flight.departing_airport.city %> to <%= @passenger.booking.flight.arrival_airport.city%>
+Date: <%= @passenger.booking.flight.date %>
+Duration: <%= @passenger.booking.flight.duration %> minutes
+check out your booking here: <%= booking_url(@booking) %>
+
+Feel free to check out my <%= link_to "GitHub", "https://github.com/megpeer" %> for more of my Ruby on Rails projects!
 
 have a great day!
+-Meg
+
