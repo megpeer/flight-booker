@@ -79,8 +79,10 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
+
   primary: &primary_production
     <<: *default
+    url: <%= ENV['DATABASE_URL'] %>
     database: flight_booker_production
     username: flight_booker
     password: <%= ENV["FLIGHT_BOOKER_DATABASE_PASSWORD"] %>
