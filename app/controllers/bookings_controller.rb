@@ -9,9 +9,9 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     respond_to do |format|
       if @booking.save
-        @booking.passengers.each do |passenger|
-          # PassengerMailer.with(booking: @booking, passenger: passenger).confirmation_email.deliver_now
-        end
+        # @booking.passengers.each do |passenger|
+        #   # PassengerMailer.with(booking: @booking, passenger: passenger).confirmation_email.deliver_now
+        # end
         format.html { redirect_to booking_path(@booking) }
       else
         puts @booking.errors.full_messages
