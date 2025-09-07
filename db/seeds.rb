@@ -1,8 +1,8 @@
 # DESTROY OLD ENTRIES
+Passenger.delete_all
+Booking.delete_all
 Flight.delete_all
 Airport.delete_all
-Booking.delete_all
-Passenger.delete_all
 
 # CREATE ALL AIRPORTS
 airports = [
