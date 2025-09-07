@@ -5,8 +5,8 @@ class Flight < ApplicationRecord
   belongs_to :departing_airport,
              class_name: 'Airport',
              foreign_key: 'departing_airport_id'
-  has_many :bookings
-  has_many :passengers, through: :bookings
+  has_many :bookings, dependant: :destroy
+  has_many :passengers, through: :bookings, dependant: :destroy
 
   def event_date_formatted
     flight.date.strftime('%m/%d/%y')
