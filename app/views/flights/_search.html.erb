@@ -1,9 +1,10 @@
 
-<% if @flights.any? %>
+<div class="container is-max-tablet box">
+    <% if @flights.any? %>
 <div>
 Available flights:
 </div>
-<div class="container is-max-tablet">
+
 <div class="box container is-fluid">
 <%= form_with url: new_booking_path, method: :get do |b| %>
 <%=b.hidden_field :passengers, value: params[:passengers] %>
@@ -34,12 +35,15 @@ Available flights:
 
 <% end %>
 
+<div>
 <%= b.submit "select flight", class: "button is-primary is-fullwidth"%>
 
-
+</div>
 <% end %>
 <% else %>
 <div>
     no flights match those parameters. please search again.
 </div>
 <% end %>
+</div>
+</div>
